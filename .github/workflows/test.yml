@@ -20,13 +20,12 @@ jobs:
           #pwd
           sudo a2enmod proxy
           sudo a2enmod proxy_fcgi
-          ls /etc/apache2/mods-enabled
-          ls -al
           sudo mv ./000-default.conf /etc/apache2/sites-enabled/000-default.conf
           sudo service apache2 start
           systemctl status apache2.service
           curl http://localhost/index.php
-          php -i
+          
+          ls -l /etc/php/8.0
 
 
 
