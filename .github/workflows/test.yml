@@ -15,7 +15,7 @@ jobs:
         run: |
           sudo service apache2 start
           ls /etc/apache2/sites-enabled
-          cat /etc/apache2/sites-enabled/default.conf
+          cat /etc/apache2/sites-enabled/000-default.conf
           echo "-------------------"
           printenv
 
