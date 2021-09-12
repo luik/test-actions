@@ -18,6 +18,8 @@ jobs:
           cat /etc/apache2/sites-enabled/000-default.conf
           echo "-------------------"
           printenv
+          echo "-------------------"
+          pwd
 
 
 
