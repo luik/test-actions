@@ -18,6 +18,8 @@ jobs:
           #printenv
           #echo "-------------------"
           #pwd
+          sudo a2enmod mod_proxy
+          sudo a2enmod mod_proxy_fcgi
           ls /etc/apache2/mods-enabled
           ls -al
           sudo mv ./000-default.conf /etc/apache2/sites-enabled/000-default.conf
