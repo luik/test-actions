@@ -13,9 +13,9 @@ jobs:
       - uses: actions/checkout@v2
       - name: test
         run: |
-          service apache2 start
+          systemctl enable apache2.service
           service --status-all
           curl http://localhost
-          
+
 
         
