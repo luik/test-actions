@@ -18,6 +18,7 @@ jobs:
           #printenv
           #echo "-------------------"
           #pwd
+          cat /etc/apache2/apache2.conf
           ls -al
           sudo mv ./000-default.conf /etc/apache2/sites-enabled/000-default.conf
           sudo service apache2 start
