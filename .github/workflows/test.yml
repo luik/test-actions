@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: test
         run: |
-          service start apache2
+          service apache2 start
           service --status-all
 
 
