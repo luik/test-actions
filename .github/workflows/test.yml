@@ -14,8 +14,7 @@ jobs:
       - name: test
         run: |
           sudo service apache2 start
-          service --status-all
-          curl http://localhost
+          ls /etc/apache2/sites-enabled
           cat /etc/apache2/sites-enabled/default.conf
           echo "-------------------"
           printenv
