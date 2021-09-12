@@ -13,13 +13,14 @@ jobs:
       - uses: actions/checkout@v2
       - name: test
         run: |
+          #cat /etc/apache2/sites-enabled/000-default.conf
+          #echo "-------------------"
+          #printenv
+          #echo "-------------------"
+          #pwd
+          sudo mv ./000-default.conf /etc/apache2/sites-enabled/000-default.conf
           sudo service apache2 start
-          ls /etc
-          cat /etc/apache2/sites-enabled/000-default.conf
-          echo "-------------------"
-          printenv
-          echo "-------------------"
-          pwd
+          curl http://localhost/index.php
 
 
 
