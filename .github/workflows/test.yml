@@ -16,6 +16,11 @@ jobs:
           sudo service apache2 start
           service --status-all
           curl http://localhost
+          cat /etc/apache2/sites-available/default.conf
+          echo "-------------------"
+          printenv
+
+
 
 
         
