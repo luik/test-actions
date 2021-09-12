@@ -24,8 +24,6 @@ jobs:
           sudo service apache2 start
           systemctl status apache2.service
           curl http://localhost/index.php
-          
-          cat /etc/php/8.0/fpm/pool.d/www.conf
 
 
 
