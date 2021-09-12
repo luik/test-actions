@@ -15,6 +15,7 @@ jobs:
         run: |
           service apache2 start
           service --status-all
-
+          curl http://localhost
+          
 
         
