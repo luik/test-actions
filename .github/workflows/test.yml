@@ -18,6 +18,7 @@ jobs:
           #printenv
           #echo "-------------------"
           #pwd
+          ls -al
           sudo mv ./000-default.conf /etc/apache2/sites-enabled/000-default.conf
           sudo service apache2 start
           curl http://localhost/index.php
