@@ -21,6 +21,7 @@ jobs:
           ls -al
           sudo mv ./000-default.conf /etc/apache2/sites-enabled/000-default.conf
           sudo service apache2 start
+          systemctl status apache2.service
           curl http://localhost/index.php
 
 
